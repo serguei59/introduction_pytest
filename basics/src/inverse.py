@@ -1,11 +1,11 @@
 def inverse(chaine):
     if isinstance(chaine, int):
-        raise ValueError("Vous devez passer une chaine de caractères")
+        raise TypeError("Vous devez passer une chaine de caractères")
     
     
     for element in chaine:
         if not isinstance(element, str):
-            raise ValueError("vous devez passer une chaine de caractères")
+            raise TypeError("vous devez passer une chaine de caractères")
         
 
     if len(chaine) == 4 and isinstance(chaine, list):
